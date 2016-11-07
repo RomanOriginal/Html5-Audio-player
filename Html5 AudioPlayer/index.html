@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="headline">
+        <h4 style="text-align: center;">By RomanAkivaev</h4>
+        </div>
+        <div id="audio-image">
+           <img src="img/cover.jpg" class="cover" >
+        </div>
+        <div id="audio-player">
+            <div id="audio-info">
+                <span class="artist">Adele</span><span class="title">Hello.mp3</span>
+            </div>
+        <input id="volume" type="range" min="0" max="10" value="4" >
+        <br>
+        <div id="buttons">
+            <span>
+                <button id="prev"></button>
+                <button id="play"></button>
+                <button id="pause"></button>
+                <button id="stop"></button>
+                <button id="next"></button>
+            </span>
+        </div>
+            <div class="claerfix"></div>
+            <div id="tracker">
+                <div id="progress-bar">
+                    <span id="progress"></span>
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+            <div class="claerfix"></div>
+            <ul id="play-list" class="hidden">
+                <li song="Eminem (Explicit) ft. Rihanna - The Monster.mp3" cover="cover.jpg" artist="">Eminem (Explicit) ft. Rihanna - The Monster</li>
+                <li song="Adele - Hello.mp3" cover="cover.jpg" artist="">Adele - Hello</li>
+                <li song="Justin timberlake - Feeling.mp3" cover="cover.jpg" artist="">Justin timberlake - Feeling</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
